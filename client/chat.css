@@ -1,0 +1,97 @@
+html {
+	background-image: url(https://www.meteor.com/assets/bg-header-star.jpg);
+	font-family: Verdana, sans-serif;
+	color: #FFF;
+	font-size: 20px;
+	display:block;
+	width: 80%;
+    margin:auto;
+}
+
+.login {
+	text-align: center;
+	margin: auto;
+}
+
+.login_button {
+	border-radius: 4px;
+	background: #16171B;
+	font-weight: 700;
+	color: white;
+	width: 20%;
+}
+
+.login_button:hover {
+	background: #080914;
+}
+
+div#chat {
+	overflow-y: scroll;
+	height: 60vh;
+	visibility: hidden;
+	overflow: auto;
+}
+
+.username_chat {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.input_message {
+	visibility: hidden;
+	font-size: 20px;
+	margin: 10px auto;
+	display: block;
+}
+
+#message {	
+	border-radius: 3px;
+	width: 90%;
+	padding: 0px 10px;
+}
+
+.getUsername {	
+	margin: 3px 0px;
+}
+
+.labelName {
+	margin-top: 25px;
+	margin-bottom: 3px;
+}
+
+#usernameID {
+	margin: 7px;
+	width: 80%;
+	max-width: 300px;
+	padding: 0px 10px;
+}
+
+img {
+	display:block;
+	width: 30%;
+    margin:auto;
+}
+
+.welcome {
+	visibility: hidden;
+	margin-top: -35px;
+	text-align: center;
+}
+
+input {
+	background-color: #5a5a5a;
+	color: #eee;
+}
+
+/* Keep the scrollbar always visible */
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(63,63,87,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}

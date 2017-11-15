@@ -1,0 +1,55 @@
+<head>
+  <title>Meteor Chat</title>
+  <link rel="stylesheet" href="chat.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="https://www.meteor.com/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+  <img src="https://d14xs1qewsqjcd.cloudfront.net/assets/logo.svg">
+  <div class="row login">
+    <div class="getUsername labelName">
+      <label>What's your name? </label>
+    </div>
+    <div class="getUsername">
+      {{> username }}
+    </div>
+    <button class="login_button"> Go! </button>
+  </div>
+  <div class="row welcome">
+    {{> welcome }}
+  </div>
+  <div class="row" id="chat">
+    {{> chat_messages }}
+  </div>
+  <div class="row input_message">
+    {{> input }}
+  </div>
+</body>
+
+<template name="username">
+  <input type="text" id="usernameID" autocomplete="off">
+</template>
+
+<template name="welcome">
+  <h2>Welcome {{user_welcome}}!!</h2>
+</template>
+
+<template name="chat_messages">
+  {{#each messages}}
+      <label class="username_chat" style="color:{{userTextColor}}">
+        {{username}}
+      </label> says: 
+      <label class="username_chat" style="font-family:{{userTextFont}}"> 
+        {{message}} 
+      </label> <br>
+  {{/each}}
+</template>
+
+<template name="input">
+  <p>Message: <input type="text" id="message"></p>
+</template>
+
+
